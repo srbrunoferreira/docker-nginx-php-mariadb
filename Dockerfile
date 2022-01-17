@@ -21,6 +21,9 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN groupadd -g 1000 www
 RUN useradd -u 1000 -ms /bin/bash -g www www
 
+# set permissions on the project directory so that it is owned by your non-root user
+RUN chown -R $USER:$USER .
+
 # Copy existing application directory contents
 COPY . /var/www
 
