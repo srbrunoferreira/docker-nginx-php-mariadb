@@ -1,5 +1,15 @@
 # Warning
 Remember to check the path on line 25 (currently a dot) to grant the correct permissions for your project folder.
+
+## Reminders for Laravel (.env)
+```
+DB_CONNECTION=mysql
+DB_HOST=DatabaseServiceNameDefiniedInDockerCompose
+DB_PORT=DefinedInDockerCompose
+DB_DATABASE=EnvVarDefinedInDockerCompose
+DB_USERNAME=EnvVarDefinedInDockerCompose
+DB_PASSWORD=EnvVarDefinedInDockerCompose
+```
 # Creating a user for the MariaDB
 
 Source: https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose
