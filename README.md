@@ -51,3 +51,5 @@ Finally, exit the container:
 ```exit```
 
 <br>
+
+[Composer file doc](https://docs.docker.com/compose/compose-file/compose-file-v3/#restart)
